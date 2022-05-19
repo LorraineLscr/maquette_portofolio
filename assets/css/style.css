@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "lato";
+    src: url(../font/Lato/Lato-Light.ttf);
+}
+
+* {
+    font-family: "lato", sans-serif;
+    color: #3f3f3f;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+header ul{
+    display: flex;
+    list-style-type: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: all .3s; 
+}
+
+header a:hover{
+    background-color: grey;
+}
+
+input, button{
+    background-color: transparent;
+    border: none;
+    padding: 1rem;
+}
+
+#imgHeader {
+    height: 50vh;
+    background-image: url(../img/parallax1.jpg);
+    background-position: 50%, -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgHeader h1 {
+    color: white;
+    background-color: #3f3f3f;
+    padding: 0.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+/* SECTION ABOUT */
+
+h2 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.love {
+    color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+.about {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#name {
+    display: flex;
+    width: 65%;
+    margin: 3rem auto;
+    justify-content: space-around;
+}
+
+figure{
+width: 90%;
+text-align: center;
+}
+
+figure img{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.welcome{
+    width: 70%;
+}
+
+figcaption i{
+    margin-right: 1rem;
+}
