@@ -5,7 +5,6 @@
 
 * {
     font-family: "lato", sans-serif;
-    color: #3f3f3f;
     margin: 0;
     padding: 0;
 }
@@ -35,13 +34,18 @@ header nav a {
 
 header a:hover {
     background-color: grey;
+    color: white;
 }
 
-input,
+nav input,
 button {
     background-color: transparent;
     border: none;
     padding: 1rem;
+}
+
+nav input:hover{
+    background-color: #f1f1f1;
 }
 
 #imgHeader {
@@ -74,6 +78,7 @@ h2 {
     align-items: center;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
+    color: #3f3f3f;
 }
 
 .love {
@@ -88,6 +93,7 @@ h2 {
 .about {
     width: 70%;
     margin: 0 auto;
+    color: #3f3f3f;
 }
 
 #name {
@@ -95,6 +101,7 @@ h2 {
     width: 65%;
     margin: 3rem auto;
     justify-content: space-around;
+    color: #3f3f3f;
 }
 
 figure {
@@ -109,6 +116,7 @@ figure img {
 
 .welcome {
     width: 70%;
+    color: #3f3f3f;
 }
 
 figcaption i {
@@ -120,12 +128,14 @@ figcaption i {
 #percentage {
     margin: 0 auto;
     width: 70%;
+    color: #3f3f3f;
 }
 
 .reallygood {
     display: flex;
     justify-content: center;
     margin-bottom: 1.5rem;
+    color: #3f3f3f;
 }
 
 .skills {
@@ -220,13 +230,19 @@ h3 {
     margin: 0.5rem;
 }
 
-#portofolio button {
+.loadmore {
     background-color: #f1f1f1;
     color: #616161;
     display: flex;
     justify-content: center;
     margin: 2rem auto;
+    cursor: pointer;
 }
+
+.loadmore:hover {
+        background-color: grey;
+        color: white;
+    }
 
 /* SECTION CONTACT */
 
@@ -241,4 +257,60 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#contact p {
+    color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+.map {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.map img {
+    width: 30%;
+}
+
+
+#contact .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #616161;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
+footer .btn{
+    background-color: white;
+    color: #3f3f3f;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn :hover{
+    background-color: #f1f1f1
+}
+
+footer p{
+    margin-top: 1rem;
 }
