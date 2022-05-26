@@ -20,7 +20,7 @@ header nav {
     width: 100vw;
 }
 
-header ul{
+header ul {
     display: flex;
     list-style-type: none;
 }
@@ -30,14 +30,15 @@ header nav a {
     color: black;
     padding: 1rem;
     font-size: 1rem;
-    transition: all .3s; 
+    transition: all .3s;
 }
 
-header a:hover{
+header a:hover {
     background-color: grey;
 }
 
-input, button{
+input,
+button {
     background-color: transparent;
     border: none;
     padding: 1rem;
@@ -64,7 +65,7 @@ input, button{
     letter-spacing: 0.5rem;
 }
 
-/* SECTION ABOUT */
+/* SECTION ABOUTME */
 
 h2 {
     font-size: 1.5rem;
@@ -96,20 +97,148 @@ h2 {
     justify-content: space-around;
 }
 
-figure{
-width: 90%;
-text-align: center;
+figure {
+    width: 90%;
+    text-align: center;
 }
 
-figure img{
+figure img {
     width: 100%;
     margin-top: 1.5rem;
 }
 
-.welcome{
+.welcome {
     width: 70%;
 }
 
-figcaption i{
+figcaption i {
     margin-right: 1rem;
+}
+
+/* SECTION PERCENTAGE */
+
+#percentage {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.reallygood {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills {
+    letter-spacing: 0.5rem;
+}
+
+.container {
+    background-color: #f1f1f1;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.skill {
+    background-color: #616161;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.photography {
+    width: 90%;
+}
+
+.webdesign {
+    width: 85%;
+}
+
+.photoshop {
+    width: 75%;
+}
+
+/* SECTION RELATIONS */
+
+#relations {
+    display: flex;
+    justify-content: space-around;
+    background-color: #616161;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.number,
+.namerelation {
+    color: white;
+    text-align: center;
+}
+
+.number {
+    font-size: 1.5rem;
+}
+
+/* SECTION PORTOFOLIO */
+
+#imgPortofolio {
+    height: 50vh;
+    background-image: url(../img/parallax2.jpg);
+    background-position: 50%, -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+#portofolio p {
+    color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.photos img {
+    width: 20%;
+    margin: 0.5rem;
+}
+
+#portofolio button {
+    background-color: #f1f1f1;
+    color: #616161;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+/* SECTION CONTACT */
+
+#imgContact {
+    height: 50vh;
+    background-image: url(../img/parallax3.jpg);
+    background-position: 50%, -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
