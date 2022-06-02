@@ -228,6 +228,7 @@ h3 {
 .photos img {
     width: 20%;
     margin: 0.5rem;
+    cursor: pointer;
 }
 
 .loadmore {
@@ -269,16 +270,12 @@ h3 {
 }
 
 .map {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
     margin: 2rem auto;
 }
 
 .map img {
     width: 30%;
 }
-
 
 #contact .btn {
     background-color: black;

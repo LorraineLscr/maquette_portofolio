@@ -2,9 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "."
 		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "maquette portofolio"
-	}
+	]
 }
