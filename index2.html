@@ -10,7 +10,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" type="module" defer></script>
 </head>
 
 
@@ -22,13 +22,13 @@
                     <li>HOME</li>
                 </a>
                 <a href="">
-                    <li><i class="fa-solid fa-user"></i>ABOUT</li>
+                    <li><i class="fa-solid fa-user"></i> ABOUT</li>
                 </a>
                 <a href="">
-                    <li><i class="fa-solid fa-grip"></i></i>PORTOFOLIO</li>
+                    <li><i class="fa-solid fa-grip"></i></i> PORTOFOLIO</li>
                 </a>
                 <a href="">
-                    <li><i class="fa-solid fa-envelope"></i>CONTACT</li>
+                    <li><i class="fa-solid fa-envelope"></i> CONTACT</li>
                 </a>
             </ul>
             <form action="" method="post">
@@ -83,15 +83,15 @@
             <p class="reallygood">Im really good at:</p>
             <p class="skills"><i class="fa-solid fa-camera"></i> Photography</p>
             <div class="container">
-                <div class="skill photography">90%</div>
+                <div class="skill photography" style="width: 0%">90%</div>
             </div>
             <p class="skills"><i class="fa-solid fa-laptop"></i> Web Design</p>
             <div class="container">
-                <div class="skill webdesign">85%</div>
+                <div class="skill webdesign" style="width: 0%">85%</div>
             </div>
             <p class="skills"><i class="fa-solid fa-image"></i> Photoshop</p>
             <div class="container">
-                <div class="skill photoshop">75%</div>
+                <div class="skill photoshop" style="width: 0%">75%</div>
             </div>
         </section>
 
@@ -144,39 +144,33 @@
                 <h3>CONTACT</h3>
             </div>
             <h2>WHERE I WORK</h2>
-            <p>I'd love your feedback!</p>
-            <div class="all">
-                <div class="map">
+            <p class="pItalic">I'd love your feedback!</p>
+            <div class="center">
+                <div class="gauche">
                     <img src="./assets/img/map.jpg" alt="map">
                 </div>
-                <div class="infos">
-                    <p class="localisation"><i class="fa-solid fa-location-dot"></i> Chicago, US</p>
-                    <p class="phone"><i class="fa-solid fa-phone"></i> Phone + 00 151515</p>
-                    <p class="mail"><i class="fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+                <div class="droite">
+                    <p class="localisation"><i class="fa-solid fa-location-dot logos"></i> Chicago, US</p>
+                    <p class="phone"><i class="fa-solid fa-phone logos"></i> Phone + 00 151515</p>
+                    <p class="mail"><i class="fa-solid fa-envelope logos"></i> Email: mail@mail.com</p>
+                    <p>Swing by for a cup of <i class="fa-solid fa-mug-saucer"></i>, or leave me a note:</p>
+                    <form class="monFormulaire" action="" method="post">
+                        <div  class="input50" >
+                            <input type="text" placeholder="Name" name="name" required>
+                            <input type="email" placeholder="Email" name="mail">
+                        </div>
+                            <input type="text" placeholder="Message" name="message">
+                            <button class="btn"><i class="fa-solid fa-paper-plane"></i> SEND MESSAGE</button>
+                    </form>
                 </div>
-                <p>Swing by for a cup of <i class="fa-solid fa-mug-saucer"></i>, or leave me a note:</p>
-                <form action="" method="post">
-                    <div>
-                        <input type="text" placeholder="Name" name="name" required>
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email" name="mail">
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Message" name="message">
-                    </div>
-                    <div>
-                        <button class="btn"><i class="fa-solid fa-paper-plane"></i> SEND MESSAGE</button>
-                    </div>
             </div>
             </div>
-            </form>
         </section>
     </main>
 
 
     <footer>
-        <button class="btn"><i class="fa-solid fa-arrow-up"></i> To the top</button>
+        <button id="btnToTheTop"><i class="fa-solid fa-arrow-up"></i> To the top</button>
         <div id="social">
             <i class="fa-brands fa-facebook-square"></i>
             <i class="fa-brands fa-instagram"></i>

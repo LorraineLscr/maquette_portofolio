@@ -44,7 +44,7 @@ button {
     padding: 1rem;
 }
 
-nav input:hover{
+nav input:hover {
     background-color: #f1f1f1;
 }
 
@@ -144,7 +144,6 @@ figcaption i {
 
 .container {
     background-color: #f1f1f1;
-    width: 100%;
     margin: 1rem 0;
 }
 
@@ -153,19 +152,9 @@ figcaption i {
     color: white;
     padding: 0.5rem;
     text-align: center;
+    transition: all 2s;
 }
 
-.photography {
-    width: 90%;
-}
-
-.webdesign {
-    width: 85%;
-}
-
-.photoshop {
-    width: 75%;
-}
 
 /* SECTION RELATIONS */
 
@@ -241,9 +230,9 @@ h3 {
 }
 
 .loadmore:hover {
-        background-color: grey;
-        color: white;
-    }
+    background-color: grey;
+    color: white;
+}
 
 /* SECTION CONTACT */
 
@@ -260,21 +249,79 @@ h3 {
     justify-content: center;
 }
 
+.pItalic{
+    font-style: italic;
+}
+
 #contact p {
     color: #3f3f3f;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-style: italic;
     padding: 0.5rem;
 }
 
-.map {
-    margin: 2rem auto;
+.center {
+    margin: auto;
+    width: 50%;
+    margin-top: 2rem;
 }
 
-.map img {
-    width: 30%;
+.gauche {
+    float: left;
+    width: 33%;
+    display: block;
+}
+
+.droite {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gauche img {
+    width: 100%;
+    border-radius: 3%;
+    height: 9.5rem;
+}
+
+.fa-mug-saucer{
+    padding-left: 0.5rem;
+}
+
+.droite input {
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+.logos {
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.monFormulaire{
+    display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   width: 100%;
+}
+
+.monFormulaire input{
+    width: 99%; 
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.input50{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input50 input{
+    width: 49%;
+    margin: .5rem auto;
 }
 
 #contact .btn {
@@ -283,13 +330,17 @@ h3 {
     border: none;
     padding: 0.5rem;
     font-size: 1rem;
-    margin-bottom: 5rem;
     cursor: pointer;
+    margin: 1rem 0 5rem 0;
 }
+
+
+
+
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: #616161;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -297,17 +348,17 @@ footer{
     color: white;
 }
 
-footer .btn{
+footer #btnToTheTop {
     background-color: white;
     color: #3f3f3f;
     margin-bottom: 1rem;
     cursor: pointer;
 }
 
-.btn :hover{
+#btnToTheTop :hover {
     background-color: #f1f1f1
 }
 
-footer p{
+footer p {
     margin-top: 1rem;
 }

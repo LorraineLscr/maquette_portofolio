@@ -1,38 +1,21 @@
-const imgElements = document.querySelectorAll(".photos img");
-console.dir(imgElements);
-const imgFull = []; 
-const frameImg = document.createElement("div");
-frameImg.style.width = "100vw";
-frameImg.style.height = "100vh";
-frameImg.style.backdropFilter = "blur(18px)";
-frameImg.style.backgroundColor = "rgba(0,0,0,0.5)";
-frameImg.style.display = "none";
-frameImg.style.justifyContent = "center";
-frameImg.style.alignItems = "center";
-frameImg.style.position = "fixed";
-frameImg.style.zIndex = 2; 
-document.body.prepend(frameImg);
+import { diaporama } from "./lib/diaporama.js"; 
+import { skillAnim } from "./lib/skillAnim.js";
+diaporama(); 
+skillAnim(); 
 
-let i = 0;
-while (i < imgElements.length) {
-    let n = i;
-    imgElements[i].addEventListener(
-        "click",
-        () => {
-            frameImg.style.display = "flex";
-            console.log(n)
-            imgFull[n] = document.createElement("img");
-            imgFull[n].style.width = "40%";
-            imgFull[n].src = imgElements[n].src;
-            frameImg.append(imgFull[n]);
-        }
-    )
-    i++;
+ /* const mybutton = document.getElementsByClassName("btn");
+ function topFunction() {
+    document.documentElement.scrollTop = 0;
+  } */
+
+
+let scrollToTopBtn = document.getElementById("btnToTheTop");
+let rootElement = document.documentElement;
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
 }
-
-frameImg.addEventListener("click", function(event){
-    if (!frameImg.querySelector("img").contains(event.target)) {
-        frameImg.style.display = "none";
-        frameImg.innerHTML ="";
-    }
-})
+scrollToTopBtn.addEventListener("click", scrollToTop);
